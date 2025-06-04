@@ -32,7 +32,7 @@ namespace Ex02
       foreach (var produto in produtos)
       {
         double desconto = produto.AplicarDesconto();
-        Console.WriteLine($"Nome: {produto.Nome} - Categoria: {produto.Categoria} - Preço base: R$ {produto.PrecoBase} - Preço com desconto: R$ {produto.PrecoFinal(desconto)}");
+        Console.WriteLine($"Nome: {produto.Nome} - Categoria: {produto.Categoria} - Preço base: R$ {produto.PrecoBase:F2} - Preço com desconto: R$ {produto.PrecoFinal(desconto):F2}");
       }
     }
   }
